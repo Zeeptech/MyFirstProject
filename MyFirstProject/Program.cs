@@ -16,9 +16,9 @@ namespace Program {
             bool validRace = false;
             bool validGender = false;
             
-         string[] AvaiableRaces = { "Orc", "HighElf", "Human" };
-         string[] AvaiableRoles = { "Warrior", "Mage", "Hunter" };
-            string[] AvaiableGenders = { "Male", "Female" };
+         string[] AvailableRaces = { "Orc", "HighElf", "Human" };
+         string[] AvailableRoles = { "Warrior", "Mage", "Hunter" };
+            string[] AvailableGenders = { "Male", "Female" };
 
 
            Console.WriteLine("Hi and Welcome to my Game. Are you ready? \n Press any Button to Continue!\n");
@@ -26,13 +26,20 @@ namespace Program {
             Console.WriteLine("Firstly, I would need your name!\n What is your name:");
                 inputName = Console.ReadLine();
             Console.WriteLine($"{inputName} is it? Great! \nThen i would like to know what race you are!.\nThese are the avaiable Races:\n");
-                foreach (string race in AvaiableRaces)
+                foreach (string race in AvailableRaces)
             {
                 Console.WriteLine(race);
             }
 
             Console.WriteLine("Which one will you Choose?");
 
+            inputRace = Utilities.SelectOption(AvailableRaces);
+            Console.WriteLine($"You have chosen: {inputRace} now that's a great Race!");
+
+
+            // CAN BE DELETED!
+
+            /*
                 while (!validRace)
             {
                 Console.WriteLine("Please enter your race:");
@@ -48,12 +55,15 @@ namespace Program {
                     Console.WriteLine($"The race '{askInputRace}' is not available.");
                 }
             }
-
-
+            */
 
             Console.WriteLine("Then i would like to know what gender you are. And Im sure you won't be happy, but for the sake of the game you are only able to select \"Male\" or \"Female\".");
-             
+            inputGender = Utilities.SelectOption(AvailableGenders, "Sorry. But there are ONLY TWO genders you Hippie, Please enter a VALID GENDER\n");
+            Console.WriteLine($"You have chosen: {inputGender} Now thats the superior Gender.. Good choice!\n");
 
+            // CAN BE DELETED!
+
+            /*
             while (!validGender)
             {
                 Console.WriteLine("Please enter your gender:");
@@ -69,21 +79,22 @@ namespace Program {
                     Console.WriteLine($"Sorry. But there are ONLY TWO genders you Hippie, Please enter a VALID GENDER\n");
                 }
             }
+            */
 
             Console.WriteLine("Lastly i would like to know your Class. You can choose beween the following classes:\n");
-                foreach (string role in AvaiableRoles)
+            inputRole = Utilities.SelectOption(AvailableRoles);
+            Console.WriteLine($"You selected {inputRole}");
+
+            // CAN BE DELETED!
+
+            /*
+                foreach (string role in AvailableRoles)
             {
                 Console.WriteLine(role);
             }
                 inputRole = Console.ReadLine();
-            
-               
-            
-            
+            */
 
-        
-        
-        
         
         }
         // Add Methods
