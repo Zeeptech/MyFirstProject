@@ -9,24 +9,30 @@ namespace Program {
     {
         static void Main(string[] args) 
         {
-         string inputName;
-         string inputRace;
-         string inputGender;
-         string inputRole;
+            string inputName;
+            string inputRace;
+            string inputGender;
+            string inputRole;
+
+            // CAN BE DELETED!
+
+            /*
             bool validRace = false;
             bool validGender = false;
+            */
             
-         string[] AvailableRaces = { "Orc", "HighElf", "Human" };
-         string[] AvailableRoles = { "Warrior", "Mage", "Hunter" };
+            string[] AvailableRaces = { "Orc", "HighElf", "Human" };
+            string[] AvailableRoles = { "Warrior", "Mage", "Hunter" };
             string[] AvailableGenders = { "Male", "Female" };
 
 
-           Console.WriteLine("Hi and Welcome to my Game. Are you ready? \n Press any Button to Continue!\n");
+            Console.WriteLine("Hi and Welcome to my Game. Are you ready? \n Press any Button to Continue!\n");
             Console.ReadKey();
             Console.WriteLine("Firstly, I would need your name!\n What is your name:");
-                inputName = Console.ReadLine();
+            inputName = Console.ReadLine();
             Console.WriteLine($"{inputName} is it? Great! \nThen i would like to know what race you are!.\nThese are the avaiable Races:\n");
-                foreach (string race in AvailableRaces)
+
+            foreach (string race in AvailableRaces)
             {
                 Console.WriteLine(race);
             }
@@ -94,13 +100,9 @@ namespace Program {
             }
                 inputRole = Console.ReadLine();
             */
-
-        
         }
         // Add Methods
 
         
     }
-
-   
  }
