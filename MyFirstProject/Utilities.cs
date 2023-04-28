@@ -14,7 +14,6 @@ namespace MyFirstProject
             bool exist = false;
             if (Array.Exists(arrays, item => item.ToLower() == keyword.ToLower()))
             {
-
                 exist = true;
             }
             return exist;

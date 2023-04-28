@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MyFirstProject
 {
-     class Player
+      class Player
     {
         //Fields == Basic data
         private string name = "null";
