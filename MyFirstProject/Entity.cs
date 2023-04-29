@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MyFirstProject
 {
-      class Entity
+    class Entity
     {
         //Fields == Basic data
         protected string name = "null";
@@ -19,12 +19,12 @@ namespace MyFirstProject
         //Properties == Runs through rules
         public string Name
         {
-            get { return name; } set {  name = value; }
+            get { return name; } set { name = value; }
         }
 
         public string Gender
         {
-            get { return gender; } set { gender = value;}
+            get { return gender; } set { gender = value; }
         }
 
         public string Race
@@ -40,7 +40,7 @@ namespace MyFirstProject
 
         public int Level
         {
-            get { return level; } set { level = value; }    
+            get { return level; } set { level = value; }
         }
 
 
@@ -50,6 +50,7 @@ namespace MyFirstProject
             this.Name = name;  
             this.Gender = gender;
             this.Race = race;
+
 
             switch (race)
             {

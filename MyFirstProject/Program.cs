@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using MyFirstProject;
+using MyFirstProject.Roles;
 using System.Data;
 using System.Xml.Linq;
 
@@ -12,8 +13,9 @@ namespace Program {
 
             Console.WriteLine("Hi and Welcome to my Game. Are you ready? \n Press any Button to Continue!\n");
             Console.ReadKey();
-            //Entity player = GetPlayerInfo();
-            
+            dynamic player = GetPlayerInfo();
+            Console.WriteLine(player.attacks[1].FailText);
+
 
 
 
@@ -26,8 +28,8 @@ namespace Program {
 
 
         // Add Methods
-        /*
-        static Entity GetPlayerInfo()
+       
+        static dynamic GetPlayerInfo()
         {
             string inputName;
             string inputRace;
@@ -65,8 +67,24 @@ namespace Program {
             inputRole = Utilities.SelectOption(AvailableRoles);
             Console.WriteLine($"\nYou selected {inputRole}");
 
-            return new Entity(inputName!, inputGender);
+            switch (inputRole)
+            {
+                case "Warrior":
+                    return new Warrior(inputName!, inputGender, inputRace);
+                    break;
+
+                case "Mage":
+                    return new Mage(inputName!, inputGender, inputRace);
+                    break;
+
+                case "Hunter":
+                    return new Hunter(inputName!, inputGender, inputRace);
+                    break;
+
+                default:
+                    return new Warrior(inputName!, inputGender, inputRace);
+                    break;
+            }
         }
-        */
     }
  }
