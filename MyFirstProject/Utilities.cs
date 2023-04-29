@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using System.Collections.Generic;
 using System.ComponentModel.Design;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace MyFirstProject
 {
-    public class Utilities
+    public static class Utilities
     {
         public static bool IsInArray(string[] arrays, string keyword)
         {
