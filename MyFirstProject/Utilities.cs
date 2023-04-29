@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.Design;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -63,6 +64,15 @@ namespace MyFirstProject
             
             return options[selectedOption];
         }
-        
+
+        //Rolls a dice between 1 and 6
+        public static int DiceRoll()
+        {
+
+            Random random = new Random();
+            int randomNumber = random.Next(1, 7);
+            return randomNumber;
+        }
+
     }
 }

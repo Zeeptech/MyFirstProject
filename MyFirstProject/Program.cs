@@ -12,7 +12,7 @@ namespace Program {
 
             Console.WriteLine("Hi and Welcome to my Game. Are you ready? \n Press any Button to Continue!\n");
             Console.ReadKey();
-            Player player = GetPlayerInfo();
+            //Entity player = GetPlayerInfo();
             
 
 
@@ -26,7 +26,8 @@ namespace Program {
 
 
         // Add Methods
-        static Player GetPlayerInfo()
+        /*
+        static Entity GetPlayerInfo()
         {
             string inputName;
             string inputRace;
@@ -64,7 +65,8 @@ namespace Program {
             inputRole = Utilities.SelectOption(AvailableRoles);
             Console.WriteLine($"\nYou selected {inputRole}");
 
-            return new Player(inputName!, inputRace, inputGender, inputRole);
+            return new Entity(inputName!, inputGender);
         }
+        */
     }
  }
