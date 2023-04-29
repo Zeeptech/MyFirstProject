@@ -16,9 +16,13 @@ namespace Program {
             dynamic player = GetPlayerInfo();
             Console.WriteLine(player.attacks[1].FailText);
 
+            //TODO
+            //Make enemy sub classes, which inherits the entity class
+            //Make enemy attacks just like the players attack array
 
+            //Battle system
 
-
+            //Storyboard
 
 
 
@@ -28,7 +32,6 @@ namespace Program {
 
 
         // Add Methods
-       
         static dynamic GetPlayerInfo()
         {
             string inputName;
