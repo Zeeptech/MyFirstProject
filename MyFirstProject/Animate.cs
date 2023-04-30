@@ -43,7 +43,8 @@ namespace MyFirstProject
                 " _______\n| *   * |\n|   *   |\n|_*___*_|", // Face 5
                 " _______\n| *   * |\n| *   * |\n|_*___*_|", // Face 6
             };
-            Console.Write(diceFaces[number]); 
+            Console.Write(diceFaces[number-1]); 
+            Console.WriteLine("\n");
         }
 
         /// <summary>

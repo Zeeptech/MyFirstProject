@@ -14,9 +14,14 @@ namespace Program {
             Animate.Text("Hi and Welcome to my Game. Are you ready?");
             Thread.Sleep(1000);
             Console.WriteLine("Press any Button to Continue!");
-            Console.Clear();
+            
+
+            int rollAttemt = Utilities.DiceRoll();
+                Animate.RollDie(rollAttemt);
+            Console.WriteLine($"You rolled a {rollAttemt}");
 
             Console.ReadKey();
+            Console.Clear();
             dynamic player = GetPlayerInfo();
             Console.WriteLine(player.attacks[1].FailText);
 
