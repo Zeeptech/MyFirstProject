@@ -22,5 +22,27 @@ namespace MyFirstProject
             this.CritText = critText;
             this.Role = Role;
         }
+
+        /*  En början/ Tanke på hur en attackRoll kan se ut. Måste komma på hur vi implementerar vilken spell-Line vi ska kö
+        public Attack AttackDice()
+        {
+            int roll = new Random().Next(1, 7); // roll a random number between 1 and 6
+            Attack attack = new Attack();
+
+            switch (roll)
+            {
+                case 1:
+                    FailText;
+                    break;
+                case 6:
+                    CritText;
+                    break;
+                default:
+                    AttackText;
+                    break;
+            }
+
+            return attack;
+        } */
     }
 }
